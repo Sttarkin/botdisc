@@ -1,0 +1,118 @@
+{
+  "nome": "Bot Discord Completo",
+  "versao": "2.0",
+  "prefixo": "/",
+  "desenvolvedor": "Thier",
+  "descricao": "Bot de Discord completo com jogos, diversão, economia, níveis e IA",
+  
+  "funcionalidades": {
+    "comandos_basicos": [
+      "!ping - Verificar latência do bot",
+      "!info - Informações do servidor",
+      "!avatar - Ver avatar de usuário",
+      "!serverinfo - Informações detalhadas do servidor",
+      "!userinfo - Informações de usuário",
+      "!uptime - Tempo online do bot"
+    ],
+    
+    "moderacao": [
+      "!ban - Banir usuário",
+      "!kick - Expulsar usuário", 
+      "!mute - Silenciar usuário",
+      "!unmute - Remover silêncio",
+      "!warn - Avisar usuário",
+      "!clear - Limpar mensagens",
+      "!lock - Bloquear canal",
+      "!unlock - Desbloquear canal"
+    ],
+    
+    "diversao": [
+      "!dado - Rolar dados",
+      "!moeda - Cara ou coroa",
+      "!8ball - Pergunta mágica",
+      "!piada - Contar piada",
+      "!fato - Fato interessante",
+      "!beijo - Mandar beijo",
+      "!abraco - Dar abraço",
+      "!tapa - Dar tapa"
+    ],
+    
+    "jogos": [
+      "!jokenpo - Pedra, papel, tesoura",
+      "!adivinhar - Jogo de adivinhação",
+      "!quiz - Quiz aleatório",
+      "!memoria - Jogo da memória",
+      "!forca - Jogo da forca",
+      "!velha - Jogo da velha"
+    ],
+    
+    "economia": [
+      "!dinheiro - Ver saldo",
+      "!trabalhar - Ganhar dinheiro",
+      "!roubar - Roubar de usuário",
+      "!transferir - Transferir dinheiro",
+      "!loja - Ver loja",
+      "!comprar - Comprar item",
+      "!inventario - Ver inventário",
+      "!ranking - Ranking de dinheiro"
+    ],
+    
+    "niveis": [
+      "!nivel - Ver nível e XP",
+      "!ranking - Ranking de níveis",
+      "!leaderboard - Tabela de líderes",
+      "!xp - Informações sobre XP"
+    ],
+    
+    "ia": [
+      "!ai - Conversar com Aziel",
+      "!aziel - Alias para IA",
+      "!chat - Alias para IA",
+      "!limpar_ia - Limpar conversa",
+      "!status_ia - Status da Aziel"
+    ]
+  },
+  
+  "configuracoes": {
+    "moeda_nome": "Coins",
+    "moeda_emoji": "💰",
+    "xp_por_mensagem": 15,
+    "xp_variacao": 10,
+    "cooldown_xp": 60,
+    "nivel_base": 100,
+    "multiplicador_nivel": 1.5,
+    "cor_principal": "0x7289DA"
+  },
+  
+  "comandos_especiais": {
+    "ajuda": "!ajuda - Mostra todos os comandos",
+    "prefixo": "! - Prefixo padrão do bot",
+    "cooldown_ia": "5 segundos entre comandos de IA",
+    "dm_auto": "Resposta automática por DM usando IA"
+  },
+  
+  "tecnologias": {
+    "linguagem": "Python 3.14",
+    "biblioteca": "discord.py 2.3.2+",
+    "ia": "OpenRouter API (x-ai/grok-code-fast-1)",
+    "banco_dados": "JSON (arquivos locais)",
+    "recursos": ["aiohttp", "psutil", "Pillow", "requests"]
+  },
+  
+  "informacoes_uteis": {
+    "como_ajudar": [
+      "Use !ajuda para ver todos os comandos",
+      "Use !ai para conversar com a Aziel",
+      "Use !info para informações do servidor",
+      "Use !ping para verificar se o bot está online"
+    ],
+    "problemas_comuns": [
+      "Se o bot não responder, verifique se tem permissões",
+      "Para comandos de IA, aguarde o cooldown de 5 segundos",
+      "Use !limpar_ia se a conversa ficar confusa",
+      "Para moderacao, o bot precisa de permissões administrativas"
+    ],
+    "contato": "Para suporte, use !ai e pergunte sobre o bot"
+  }
+}
+

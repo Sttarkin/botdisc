@@ -1,0 +1,12 @@
+{
+  "prefix": "/",
+  "cor_principal": "0x7289DA",
+  "moeda_nome": "Coins",
+  "moeda_emoji": "💰",
+  "xp_por_mensagem": 15,
+  "xp_variacao": 10,
+  "cooldown_xp": 60,
+  "nivel_base": 100,
+  "multiplicador_nivel": 1.5
+}
+

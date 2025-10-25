@@ -1,0 +1,15 @@
+{
+  "1428566870956707850": {
+    "enabled_channels": [
+      "1428566871447437418"
+    ],
+    "welcome_channel": "1431697769898315876",
+    "welcome_message": "Bem-vindo ao servidor, {user}!",
+    "custom_commands": {},
+    "ai_enabled": false,
+    "moderation_enabled": true,
+    "economy_enabled": true,
+    "levels_enabled": true,
+    "last_updated": "2025-10-25T12:07:38.110428"
+  }
+}
