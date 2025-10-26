@@ -14,7 +14,7 @@ class IA(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self.api_url = "https://openrouter.ai/api/v1/chat/completions"
-        self.api_key = "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"
+        self.api_key = os.getenv("OPENROUTER_API_KEY")
         self.model = "x-ai/grok-code-fast-1"
         self.conversations = {}  # Armazenar conversas por usuário
         self.log_channel_id = 1431654830572699730  # Canal de logs
