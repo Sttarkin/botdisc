@@ -135,7 +135,13 @@ async def main():
     # Definir tempo de início
     bot.start_time = time.time()
     
-    # Nota: dashboard web removido — configuração passa a ser feita via comandos no Discord
+    # Iniciar dashboard web em thread separada
+    import dashboard
+    dashboard.set_bot_instance(bot)
+    dashboard_thread = threading.Thread(target=dashboard.run_dashboard, kwargs={'host': '0.0.0.0', 'port': 5000})
+    dashboard_thread.daemon = True
+    dashboard_thread.start()
+    print('[OK] Dashboard iniciado em http://0.0.0.0:5000')
     
     async with bot:
         await load_cogs()

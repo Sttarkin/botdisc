@@ -10,6 +10,14 @@ from datetime import datetime
 app = Flask(__name__)
 CORS(app)
 
+@app.after_request
+def add_header(response):
+    """Adicionar headers para desabilitar cache"""
+    response.headers['Cache-Control'] = 'no-cache, no-store, must-revalidate'
+    response.headers['Pragma'] = 'no-cache'
+    response.headers['Expires'] = '0'
+    return response
+
 # Variável global para o bot (será definida pelo main.py)
 bot_instance = None
 
